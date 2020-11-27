@@ -11,9 +11,6 @@ repository = "https://github.com/snapview/tokio-tungstenite"
 version = "0.12.0"
 edition = "2018"
 
-[patch.crates-io]
-tungstenite = { git = "https://github.com/adambezecny/tungstenite-rs"}
-
 [features]
 default = ["connect"]
 connect = ["stream", "tokio/net"]
@@ -28,7 +25,7 @@ tokio = { version = "0.3", default-features = false, features = ["io-util"] }
 
 [dependencies.tungstenite]
 version = "0.11.1"
-default-features = false
+#default-features = false
 
 [dependencies.native-tls]
 optional = true
