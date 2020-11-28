@@ -23,11 +23,9 @@ futures-util = { version = "0.3", default-features = false, features = ["async-a
 pin-project = "1.0"
 tokio = { version = "0.3", default-features = false, features = ["io-util"] }
 
-tungstenite = { git = "https://github.com/adambezecny/tungstenite-rs", default-features = false }
-
-#[dependencies.tungstenite]
-#version = "0.11.1"
-#default-features = false
+[dependencies.tungstenite]
+version = "0.11.1"
+default-features = false
 
 [dependencies.native-tls]
 optional = true
